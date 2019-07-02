@@ -1,0 +1,475 @@
+<div class="w3-container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="w3-card-4">
+        <h5 class="w3-black w3-padding" >Resturant Profile</h5>
+        <div class="w3-container w3-padding">
+          <table class="w3-table-all" >
+            <tr>
+              <th>Name</th>
+              <td><input type="text" name="resturantName" placeholder="Enter Resturant Name..." class="w3-input" ></td>  
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td><input type="email" name="resturantName" placeholder="Enter Resturant Email..." class="w3-input" ></td>  
+            </tr>
+            <tr>
+              <th>Mobile</th>
+              <td><input type="number" name="resturantName" placeholder="Enter Resturant Number..." class="w3-input" ></td>  
+            </tr>
+            <tr>
+              <th>Address</th>
+              <td><input type="text" name="resturantName" placeholder="Enter Resturant Address..." class="w3-input" ></td>  
+            </tr>   
+            <tr>
+              <th></th>
+              <td><button class="w3-btn w3-yellow w3-small w3-round" >Update</button></td>  
+            </tr>   
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+        <div class="w3-card-4">
+          <h5 class="w3-black w3-padding" >Resturant Activity</h5>
+          <div class="w3-container w3-padding">
+            <table class="w3-table-all" >
+              <tr>
+                <th>Availability</th>
+                <td>
+                  <!-- Rectangular switch -->
+              <style>
+                  .switch {
+                    position: relative;
+                    display: inline-block;
+                    width: 60px;
+                    height: 34px;
+                  }
+  
+                  .switch input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                  }
+  
+                  .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #ccc;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                  }
+  
+                  .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 26px;
+                    width: 26px;
+                    left: 4px;
+                    bottom: 4px;
+                    background-color: white;
+                    -webkit-transition: .4s;
+                    transition: .4s;
+                  }
+  
+                  input:checked+.slider {
+                    background-color: #2196F3;
+                  }
+  
+                  input:focus+.slider {
+                    box-shadow: 0 0 1px #2196F3;
+                  }
+  
+                  input:checked+.slider:before {
+                    -webkit-transform: translateX(26px);
+                    -ms-transform: translateX(26px);
+                    transform: translateX(26px);
+                  }
+  
+                  /* Rounded sliders */
+                  .slider.round {
+                    border-radius: 34px;
+                  }
+  
+                  .slider.round:before {
+                    border-radius: 50%;
+                  }
+                </style>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+                </td>  
+              </tr>
+              <tr>
+                  <th>Total Availability</th>
+                  <td><input type="number" name="resturantName" placeholder="Enter Resturant Email..." class="w3-input" ></td>  
+                </tr>
+              <tr>
+                <th>Veg Availability</th>
+                <td><input type="number" name="resturantName" placeholder="Enter Resturant Email..." class="w3-input" ></td>  
+              </tr>
+              <tr>
+                <th>Non-Veg Availability</th>
+                <td><input type="number" name="resturantName" placeholder="Enter Resturant Number..." class="w3-input" ></td>  
+              </tr> 
+              <tr>
+                <th></th>
+                <td><button class="w3-btn w3-yellow w3-small w3-round" >Update</button></td>  
+              </tr>   
+            </table>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-4">
+        <div class="w3-card-4">
+            <h5 class="w3-black w3-padding" >Map & Ratings</h5>
+            <div class="w3-container w3-padding">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15554.421399150406!2d77.6145552!3d12.9330676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe21a58ee4671826!2sGilly%E2%80%99s+Resto+Bar%2C+Bangalore!5e0!3m2!1sen!2sin!4v1561916013848!5m2!1sen!2sin" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <label><span class="w3-text-green" >4</span>/<span class="w3-text-red" >5</span> Out Of 105 Ratings</label>
+                <br/>
+                <img src="../../assets/img/starYellow.png" height="30px" />
+                <img src="../../assets/img/starYellow.png" height="30px" />
+                <img src="../../assets/img/starYellow.png" height="30px" />
+                <img src="../../assets/img/starYellow.png" height="30px" />
+                <img src="../../assets/img/starBlank.png" height="30px" />
+            </div>
+        </div>      
+    </div>
+  </div>
+</div>
+
+<hr/>
+<h3 class="w3-center" ><b>Requirement Logs</b></h3>
+<!-- Food Requirement Log-->
+<div class="w3-container w3-padding" style="margin: 10px">
+    <!-- Single Requirement Log -->
+    <div class=" w3-card-4 row w3-padding" style="margin-top: 20px" >
+      <div class="col-md-6">
+        <label><b><u>Requirement Details</u></b></label>
+        <table class="w3-table-all" >
+           <tr>
+             <th>Request Time</th>
+             <td>26/06/2019 08:30 AM</td>
+           </tr>
+           <tr>
+              <th>Required</th>
+              <td>26/06/2019 06:40 PM</td>
+           </tr>
+           <tr>
+              <th>Total Quantity</th>
+              <td>100 [Units]</td>
+           </tr>
+           <tr>
+              <th>Veg</th>
+              <td>75 [Units]</td>
+           </tr>
+           <tr>
+              <th>Non-Veg</th>
+              <td>25 [Units]</td>
+           </tr>
+        </table>
+      </div> 
+      <div class="col-md-6">
+          <label><b><u>Process Details</u></b></label>
+          <table class="w3-table-all" >
+             <tr>
+               <th>Pick Up Time</th>
+               <td>26/06/2019 08:30 AM</td>
+             </tr>
+             <tr>
+                <th>Assigned Delivery Agent</th>
+                <td>Ashutosh Khamari<br/>+91-143</td>
+             </tr>
+             <tr>
+                <th>Status</th>
+                <td>
+                  <select class="form-control" >
+                    <option>Ready For Pick Up</option>
+                    <option>Picked By Delivery Boy</option>
+                  </select>
+                </td>
+             </tr>
+             <tr>
+                <th></th>
+                <td>
+                  <button class="w3-btn w3-small w3-round w3-orange" >Update</button>
+                  &nbsp;
+                  <button class="w3-btn w3-small w3-round w3-green" >Accept</button>
+                  &nbsp;
+                  <button class="w3-btn w3-small w3-round w3-red" >Reject</button>
+                </td>
+             </tr>
+          </table>
+      </div>
+    </div>
+    <!-- End Of Single Requirement Log-->
+
+    <!-- Single Requirement Log -->
+    <div class=" w3-card-4 row w3-padding" style="margin-top: 20px" >
+        <div class="col-md-6">
+          <label><b><u>Requirement Details</u></b></label>
+          <table class="w3-table-all" >
+             <tr>
+               <th>Request Time</th>
+               <td>26/06/2019 08:30 AM</td>
+             </tr>
+             <tr>
+                <th>Required</th>
+                <td>26/06/2019 06:40 PM</td>
+             </tr>
+             <tr>
+                <th>Total Quantity</th>
+                <td>100 [Units]</td>
+             </tr>
+             <tr>
+                <th>Veg</th>
+                <td>75 [Units]</td>
+             </tr>
+             <tr>
+                <th>Non-Veg</th>
+                <td>25 [Units]</td>
+             </tr>
+          </table>
+        </div> 
+        <div class="col-md-6">
+            <label><b><u>Process Details</u></b></label>
+            <table class="w3-table-all" >
+               <tr>
+                 <th>Pick Up Time</th>
+                 <td>26/06/2019 08:30 AM</td>
+               </tr>
+               <tr>
+                  <th>Assigned Delivery Agent</th>
+                  <td>Ashutosh Khamari<br/>+91-143</td>
+               </tr>
+               <tr>
+                  <th>Status</th>
+                  <td>
+                    <select class="form-control" >
+                      <option>Ready For Pick Up</option>
+                      <option>Picked By Delivery Boy</option>
+                    </select>
+                  </td>
+               </tr>
+               <tr>
+                  <th></th>
+                  <td>
+                    <button class="w3-btn w3-small w3-round w3-orange" >Update</button>
+                    &nbsp;
+                    <button class="w3-btn w3-small w3-round w3-green" >Accept</button>
+                    &nbsp;
+                    <button class="w3-btn w3-small w3-round w3-red" >Reject</button>
+                  </td>
+               </tr>
+            </table>
+        </div>
+      </div>
+      <!-- End Of Single Requirement Log-->
+
+      <!-- Single Requirement Log -->
+    <div class=" w3-card-4 row w3-padding" style="margin-top: 20px" >
+        <div class="col-md-6">
+          <label><b><u>Requirement Details</u></b></label>
+          <table class="w3-table-all" >
+             <tr>
+               <th>Request Time</th>
+               <td>26/06/2019 08:30 AM</td>
+             </tr>
+             <tr>
+                <th>Required</th>
+                <td>26/06/2019 06:40 PM</td>
+             </tr>
+             <tr>
+                <th>Total Quantity</th>
+                <td>100 [Units]</td>
+             </tr>
+             <tr>
+                <th>Veg</th>
+                <td>75 [Units]</td>
+             </tr>
+             <tr>
+                <th>Non-Veg</th>
+                <td>25 [Units]</td>
+             </tr>
+          </table>
+        </div> 
+        <div class="col-md-6">
+            <label><b><u>Process Details</u></b></label>
+            <table class="w3-table-all" >
+               <tr>
+                 <th>Pick Up Time</th>
+                 <td>26/06/2019 08:30 AM</td>
+               </tr>
+               <tr>
+                  <th>Assigned Delivery Agent</th>
+                  <td>Ashutosh Khamari<br/>+91-143</td>
+               </tr>
+               <tr>
+                  <th>Status</th>
+                  <td>
+                    <select class="form-control" >
+                      <option>Ready For Pick Up</option>
+                      <option>Picked By Delivery Boy</option>
+                    </select>
+                  </td>
+               </tr>
+               <tr>
+                  <th></th>
+                  <td>
+                    <button class="w3-btn w3-small w3-round w3-orange" >Update</button>
+                    &nbsp;
+                    <button class="w3-btn w3-small w3-round w3-green" >Accept</button>
+                    &nbsp;
+                    <button class="w3-btn w3-small w3-round w3-red" >Reject</button>
+                  </td>
+               </tr>
+            </table>
+        </div>
+      </div>
+      <!-- End Of Single Requirement Log-->
+
+      <!-- Single Requirement Log -->
+    <div class=" w3-card-4 row w3-padding" style="margin-top: 20px" >
+        <div class="col-md-6">
+          <label><b><u>Requirement Details</u></b></label>
+          <table class="w3-table-all" >
+             <tr>
+               <th>Request Time</th>
+               <td>26/06/2019 08:30 AM</td>
+             </tr>
+             <tr>
+                <th>Required</th>
+                <td>26/06/2019 06:40 PM</td>
+             </tr>
+             <tr>
+                <th>Total Quantity</th>
+                <td>100 [Units]</td>
+             </tr>
+             <tr>
+                <th>Veg</th>
+                <td>75 [Units]</td>
+             </tr>
+             <tr>
+                <th>Non-Veg</th>
+                <td>25 [Units]</td>
+             </tr>
+          </table>
+        </div> 
+        <div class="col-md-6">
+            <label><b><u>Process Details</u></b></label>
+            <table class="w3-table-all" >
+               <tr>
+                 <th>Pick Up Time</th>
+                 <td>26/06/2019 08:30 AM</td>
+               </tr>
+               <tr>
+                  <th>Assigned Delivery Agent</th>
+                  <td>Ashutosh Khamari<br/>+91-143</td>
+               </tr>
+               <tr>
+                  <th>Status</th>
+                  <td>
+                    <select class="form-control" >
+                      <option>Ready For Pick Up</option>
+                      <option>Picked By Delivery Boy</option>
+                    </select>
+                  </td>
+               </tr>
+               <tr>
+                  <th></th>
+                  <td>
+                    <button class="w3-btn w3-small w3-round w3-orange" >Update</button>
+                    &nbsp;
+                    <button class="w3-btn w3-small w3-round w3-green" >Accept</button>
+                    &nbsp;
+                    <button class="w3-btn w3-small w3-round w3-red" >Reject</button>
+                  </td>
+               </tr>
+            </table>
+        </div>
+      </div>
+      <!-- End Of Single Requirement Log-->
+
+      <!-- Single Requirement Log -->
+    <div class=" w3-card-4 row w3-padding" style="margin-top: 20px" >
+        <div class="col-md-6">
+          <label><b><u>Requirement Details</u></b></label>
+          <table class="w3-table-all" >
+             <tr>
+               <th>Request Time</th>
+               <td>26/06/2019 08:30 AM</td>
+             </tr>
+             <tr>
+                <th>Required</th>
+                <td>26/06/2019 06:40 PM</td>
+             </tr>
+             <tr>
+                <th>Total Quantity</th>
+                <td>100 [Units]</td>
+             </tr>
+             <tr>
+                <th>Veg</th>
+                <td>75 [Units]</td>
+             </tr>
+             <tr>
+                <th>Non-Veg</th>
+                <td>25 [Units]</td>
+             </tr>
+          </table>
+        </div> 
+        <div class="col-md-6">
+            <label><b><u>Process Details</u></b></label>
+            <table class="w3-table-all" >
+               <tr>
+                 <th>Pick Up Time</th>
+                 <td>26/06/2019 08:30 AM</td>
+               </tr>
+               <tr>
+                  <th>Assigned Delivery Agent</th>
+                  <td>Ashutosh Khamari<br/>+91-143</td>
+               </tr>
+               <tr>
+                  <th>Status</th>
+                  <td>
+                    <select class="form-control" >
+                      <option>Ready For Pick Up</option>
+                      <option>Picked By Delivery Boy</option>
+                    </select>
+                  </td>
+               </tr>
+               <tr>
+                  <th></th>
+                  <td>
+                    <button class="w3-btn w3-small w3-round w3-orange" >Update</button>
+                    &nbsp;
+                    <button class="w3-btn w3-small w3-round w3-green" >Accept</button>
+                    &nbsp;
+                    <button class="w3-btn w3-small w3-round w3-red" >Reject</button>
+                  </td>
+               </tr>
+            </table>
+        </div>
+      </div>
+      <!-- End Of Single Requirement Log-->
+</div>
+<!-- end Of Food Requirement Log-->
+
+
+<hr/>
+<h3 class="w3-center" ><b>Detailed Reports</b></h3>
+<div class="row">
+   <div class="col-md-6">
+      <div id="chartContainer" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+   </div>
+   <div class="col-md-6">
+      <div id="chartContainer1" style="height: 370px; width: 100%; margin-left:auto;margin-right:auto;"></div>
+   </div>
+   <div class="col-md-6"></div>
+   <div class="col-md-6"></div>
+</div>
+
